@@ -15,7 +15,7 @@ gulp.task('test', function () {
 
 gulp.task('test:auto', function (done) {
 
-    gulp.task('test:watch', ['test'], reload);
-    gulp.watch(files, ['icons:watch']);
+    gulp.task('test:watch', ['test']);
+    gulp.watch(files, ['test:watch']);
 
 });

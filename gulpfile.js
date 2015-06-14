@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 
 var files = [
-  './test/helpers.js',
+  './helpers.js',
   './app/*.js',
   './app/*.spec.js',
   './app/**/*.js',
@@ -18,7 +18,7 @@ gulp.task('test', function () {
 
 });
 
-gulp.task('test:auto', function (done) {
+gulp.task('test:auto', ['test'], function (done) {
 
     gulp.task('test:watch', ['test']);
     gulp.watch(files, ['test:watch']);

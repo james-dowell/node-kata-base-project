@@ -1,6 +1,6 @@
 var App = require('./app');
 
-describe("Something", function(){
+describe("Something", () => {
 
     it("should be called hello", function(){
         var app = new App();

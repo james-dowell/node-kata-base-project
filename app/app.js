@@ -1,5 +1,7 @@
-var App = function () {
-    this.name = "hello";
-};
+export default class App {
 
-module.exports = App;
+    constructor() {
+        this.name = 'hello';
+    }
+
+}

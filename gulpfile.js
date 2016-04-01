@@ -25,7 +25,7 @@ gulp.task('test', ['es6'], function () {
 gulp.task('test:auto', ['test', 'es6'], function (done) {
 
     gulp.task('test:watch', ['test', 'es6']);
-    gulp.watch(files, ['test:watch']);
+    gulp.watch('./app/**/*.js', ['test:watch']);
 
 });
 

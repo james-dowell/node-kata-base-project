@@ -1,5 +1,8 @@
 var chai = require('chai');
+var sinonChai = require('sinon-chai');
 
-global.expect = chai.expect;
+chai.use(sinonChai);
+
 global.sinon = require('sinon');
+global.expect = chai.expect;
 global._ = require('lodash');
